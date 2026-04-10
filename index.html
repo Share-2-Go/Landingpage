@@ -1,16 +1,184 @@
 
   <!DOCTYPE html>
-  <html lang="en">
+  <html lang="it">
     <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Owner Landing</title>
+
+      <!-- ================================================
+           TITLE — keyword primaria in apertura, < 60 char
+      ================================================= -->
+      <title>Share2Go | Carsharing tra Privati in Italia</title>
+
+      <!-- ================================================
+           META DESCRIPTION — < 155 char, doppio pubblico
+      ================================================= -->
+      <meta name="description" content="Share2Go è il carsharing peer-to-peer italiano. Noleggia un'auto vicino a te o guadagna fino a 600€/mese condividendo la tua. Kasko inclusa, pagamenti sicuri." />
+
+      <!-- KEYWORDS -->
+      <meta name="keywords" content="carsharing tra privati, noleggio auto tra privati, car sharing privato italia, peer to peer car sharing, guadagnare con la propria auto, affittare auto privati, noleggio auto economico italia, share2go" />
+
+      <!-- ROBOTS -->
+      <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+      <!-- CANONICAL -->
+      <link rel="canonical" href="https://www.share2go.it/" />
+
+      <!-- GEO TARGETING -->
+      <meta name="geo.region" content="IT" />
+      <meta name="language" content="Italian" />
+
+      <!-- ================================================
+           OPEN GRAPH
+      ================================================= -->
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://www.share2go.it/" />
+      <meta property="og:site_name" content="Share2Go" />
+      <meta property="og:title" content="Share2Go — Carsharing tra Privati in Italia" />
+      <meta property="og:description" content="La tua auto, una risorsa. Guadagna fino a 600€/mese condividendola, con Kasko inclusa su ogni viaggio. Oppure noleggia un'auto vicino a te in 2 minuti." />
+      <meta property="og:image" content="https://www.share2go.it/og-image.jpg" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:alt" content="Share2Go - Carsharing tra privati in Italia" />
+      <meta property="og:locale" content="it_IT" />
+
+      <!-- ================================================
+           TWITTER CARD
+      ================================================= -->
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Share2Go — Carsharing tra Privati in Italia" />
+      <meta name="twitter:description" content="Guadagna fino a 600€/mese con la tua auto o noleggia quella di un privato vicino a te. Kasko inclusa, conferma istantanea." />
+      <meta name="twitter:image" content="https://www.share2go.it/og-image.jpg" />
+
+      <!-- FAVICON -->
+      <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+      <link rel="manifest" href="/site.webmanifest" />
+      <meta name="theme-color" content="#ffffff" />
+
+      <!-- ================================================
+           STRUCTURED DATA — Organization
+      ================================================= -->
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Share2Go",
+        "url": "https://www.share2go.it",
+        "logo": "https://www.share2go.it/logo.png",
+        "description": "Piattaforma italiana di carsharing peer-to-peer tra privati. Guadagna fino a 600€/mese condividendo la tua auto o noleggia quella di un privato vicino a te.",
+        "foundingDate": "2026",
+        "areaServed": { "@type": "Country", "name": "Italia" }
+      }
+      </script>
+
+      <!-- ================================================
+           STRUCTURED DATA — WebSite
+      ================================================= -->
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Share2Go",
+        "url": "https://www.share2go.it"
+      }
+      </script>
+
+      <!-- ================================================
+           STRUCTURED DATA — FAQPage
+           Domande reali estratte da FAQSection.tsx e DriverFAQSection.tsx
+      ================================================= -->
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Chi può guidare la mia auto su Share2Go?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Solo driver verificati con patente valida da almeno 1 anno e un controllo identità superato. Ogni profilo viene monitorato e il proprietario ha sempre l'ultima parola su ogni richiesta di noleggio."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Cosa succede in caso di danni o furto alla mia auto?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ogni viaggio è coperto dalla nostra assicurazione Kasko completa. Include danni, furto, incendio e atti vandalici. La tua polizza personale e la tua classe di merito non vengono mai intaccate."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quanto si guadagna mettendo la propria auto su Share2Go?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In media, i proprietari attivi guadagnano tra 300 e 600 euro al mese. L'importo dipende dal modello dell'auto, dalla città e dalla disponibilità offerta. I pagamenti vengono accreditati ogni 15 giorni tramite bonifico."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Come funziona la gestione delle multe?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Se un driver riceve una multa durante il noleggio, la responsabilità viene trasferita automaticamente a lui grazie al verbale di consegna digitale. Share2Go gestisce tutta la burocrazia."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Posso scegliere chi guida la mia auto?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sì. Puoi accettare o rifiutare ogni richiesta. Hai accesso allo storico completo del driver: recensioni, viaggi passati e punteggio di affidabilità."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "L'assicurazione è inclusa nei noleggi Share2Go?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sì. Ogni noleggio su Share2Go include automaticamente una copertura assicurativa Kasko completa. Si attiva al check-in e rimane attiva fino al check-out. La classe di merito del proprietario non viene mai toccata."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quanto costa noleggiare un'auto su Share2Go rispetto al noleggio tradizionale?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In media Share2Go costa il 49% in meno rispetto alle agenzie di noleggio tradizionali. Il pagamento viene pre-autorizzato alla prenotazione e addebitato 24 ore prima del noleggio."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Come funziona il ritiro dell'auto?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "30 minuti prima si sblocca il check-in nell'app. Il proprietario fotografa i 4 angoli dell'auto, il cruscotto con km e carburante. Il driver verifica e conferma la ricezione delle chiavi."
+            }
+          }
+        ]
+      }
+      </script>
+
+      <!-- KEEP ORIGINAL STYLE -->
       <style>html, body { height: 100%; margin: 0; } #root { height: 100%; }</style>
     </head>
 
     <body>
+      <!-- NOSCRIPT: contenuto base per crawler senza JS (Bing, bot minori) -->
+      <noscript>
+        <div style="font-family:sans-serif; max-width:800px; margin:40px auto; padding:0 20px;">
+          <h1>Share2Go — Carsharing tra Privati in Italia</h1>
+          <p>Share2Go è la piattaforma italiana di carsharing peer-to-peer. Guadagna fino a 600€/mese condividendo la tua auto, oppure noleggia un'auto di un privato vicino a te in 2 minuti. Kasko inclusa su ogni viaggio, pagamenti sicuri.</p>
+          <h2>Per i Proprietari (Owner)</h2>
+          <p>Metti a noleggio la tua auto quando non la usi. Assicurazione Kasko inclusa, pagamenti ogni 15 giorni, classe di merito protetta.</p>
+          <h2>Per i Noleggiatori (Driver)</h2>
+          <p>Noleggia un'auto da privati vicino a te. Conferma istantanea, 49% meno caro del noleggio tradizionale, identità verificata.</p>
+        </div>
+      </noscript>
+
       <div id="root"></div>
       <script type="module" src="/src/main.tsx"></script>
     </body>
   </html>
-  
